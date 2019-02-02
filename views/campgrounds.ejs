@@ -3,7 +3,7 @@
 <div class="container">
     <header class="jumbotron">
         <div class="container">
-            <h1 class="display-1"> Campgrounds Page</h1>
+            <h1 class="display-1"> Camping Page</h1>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus velit amet provident nihil facere iure quae necessitatibus doloribus eligendi.</p>
             <p>
                 <a href="/campgrounds/new" class="btn btn-primary btn-lg"> ADD NEW CAMPGROUND</a>
@@ -11,13 +11,16 @@
         </div>
     </header>
 
-    <div class="container mt-5">
-        <div class="row">
+    <div class="container">
+        <div class="row text-center">
         <% campgrounds.forEach(function(camp){ %>
-            <div class="card col-sm-6 col-md-3">
-                <img class="card-img-top" src=<%= camp.image %> >
-                <div class="card-body">
-                    <p class="card-text"> <%= camp.name %> </p>
+            <div class="d-flex align-items-stretch col-sm-6 col-md-3">
+                <div class="card px-0 mx-1 my-4">
+                        <img class="card-img-top" src=<%= camp.image %> >
+                        <div class="card-body">
+                            <h3> <%= camp.name %>  </h3>
+                            <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, placeat.</p>
+                        </div>
                 </div>
             </div>
         <% }); %>
